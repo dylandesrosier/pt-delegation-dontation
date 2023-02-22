@@ -74,10 +74,12 @@ const CurrentDelegateCardItem = (props: { prizePool: PrizePoolMetaData }) => {
 
   return (
     <div>
-      <h3>{getChainNiceName(chainId)}</h3>
+      <h3 className="font-bold text-lg">{getChainNiceName(chainId)}</h3>
       {isFetched && !isError && (
-        <div className="flex gap-2">
-          {delegateAddress as string}
+        <div className="flex flex-col lg:flex-row lg:items-center gap-2">
+          <span className="text-sm lg:text-base">
+            {delegateAddress as string}
+          </span>
           <a
             href={getEtherscanAddressLink(chainId, delegateAddress as string)}
             className="btn btn-sm btn-link"
