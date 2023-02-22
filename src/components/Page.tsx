@@ -16,7 +16,9 @@ export const Page = (props: {
       </Head>
 
       <Header />
-      <main className="px-4 pb-20 max-w-7xl mx-auto">{props.children}</main>
+      <main className="px-4 pb-40 md:pb-20 max-w-7xl mx-auto">
+        {props.children}
+      </main>
       <Footer />
     </div>
   );
@@ -58,7 +60,10 @@ export const Header: React.FC = () => {
             </li>
           </ul>
         </div>
-        <Link href="/" className="btn btn-ghost normal-case text-xl">
+        <Link
+          href="/"
+          className="btn btn-ghost normal-case text-xl hidden sm:inline-flex"
+        >
           No Loss Donation
         </Link>
       </div>

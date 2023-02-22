@@ -19,18 +19,21 @@ const Home: NextPage = () => {
 
 const Hero = () => {
   return (
-    <div className="hero py-10 bg-base-200 rounded-xl">
-      <div className="hero-content text-center">
-        <div className="max-w-md">
-          <h1 className="text-5xl font-bold">Make an impact, risk free</h1>
-          <p className="py-6">
-            Delegate your chances to win prizes to charities and causes you care
-            about while maintaining full custody of your funds.
-          </p>
-          <Link href="/explore" className="">
-            <button className="btn btn-primary mb-4">Get Started</button>
-          </Link>
-          <PoweredByPoolTogether />
+    <div className="relative">
+      <div className="mask mask-heart absolute inset-1/4 w-1/2 h-1/2 bg-secondary" />
+      <div className="hero py-10 bg-base-200 bg-opacity-50 rounded-xl backdrop-blur-3xl">
+        <div className="hero-content text-center">
+          <div className="max-w-md">
+            <h1 className="text-5xl font-bold">Make an impact, risk free</h1>
+            <p className="py-6">
+              Delegate your chances to win prizes to charities and causes you
+              care about while maintaining full custody of your funds.
+            </p>
+            <Link href="/explore" className="">
+              <button className="btn btn-primary mb-4">Get Started</button>
+            </Link>
+            <PoweredByPoolTogether />
+          </div>
         </div>
       </div>
     </div>

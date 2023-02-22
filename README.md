@@ -1,8 +1,14 @@
-# Web3 Dapp Template
+# Delegation Donation App
 
-An opinionated, slim app packaged with some of my favourite tools for building web3 appss
+A simple app to promote projects, charities, groups or individuals who would make good use of PoolTogether delegations.
 
-## Getting Started
+Read more about delegations [here](https://docs.pooltogether.com/pooltogether/guides/deposit-delegator#delegation)
+
+### Suggesting Projects
+
+To suggest add a new project to receive delegations create a new issue [here](https://github.com/dylandesrosier/pt-delegation-dontation/issues/new?assignees=&labels=project+suggestion&template=project-suggestion.md&title=%5BProject+Suggestion%5D) or **ideally** submit a pull request with the same suggestion template.
+
+## Development
 
 ### Install
 
@@ -10,14 +16,10 @@ An opinionated, slim app packaged with some of my favourite tools for building w
 pnpm i
 ```
 
-### Development server
+### Local development
 
 ```
 pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000)
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
